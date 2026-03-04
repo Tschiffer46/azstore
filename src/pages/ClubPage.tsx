@@ -6,12 +6,12 @@ export default function ClubPage() {
   const club = clubs.find((c) => c.slug === clubSlug)
 
   if (!club) {
-    return <p className="text-gray-600">Klubben hittades inte.</p>
+    return <p className="text-[#A0A0A0]">Klubben hittades inte.</p>
   }
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900">{club.name}</h1>
+      <h1 className="text-2xl font-bold text-white">{club.name}</h1>
     </div>
   )
 }

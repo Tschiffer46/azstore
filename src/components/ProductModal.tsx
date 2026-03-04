@@ -66,20 +66,20 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose()
       }}
     >
-      <div className="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
-        <div className="flex items-center justify-between px-6 py-4 border-b">
-          <h2 className="text-lg font-semibold text-gray-900">
+      <div className="bg-[#111111] border border-[#1A1A1A] rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-[#1A1A1A]">
+          <h2 className="text-lg font-semibold text-white">
             {product ? 'Redigera produkt' : 'Lägg till produkt'}
           </h2>
           <button
             type="button"
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 text-xl leading-none"
+            className="text-[#A0A0A0] hover:text-white text-xl leading-none transition-colors"
           >
             ✕
           </button>
@@ -88,31 +88,31 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
         <form onSubmit={handleSubmit} className="px-6 py-4 space-y-4">
           {/* Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Namn <span className="text-red-500">*</span>
+            <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
+              Namn <span className="text-red-400">*</span>
             </label>
             <input
               type="text"
               value={form.name}
               onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
-              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
               placeholder="T.ex. Basic T-shirt"
             />
             {errors.name && (
-              <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+              <p className="text-red-400 text-xs mt-1">{errors.name}</p>
             )}
           </div>
 
           {/* Description */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
               Beskrivning
             </label>
             <textarea
               value={form.description}
               onChange={(e) => setForm((p) => ({ ...p, description: e.target.value }))}
               rows={2}
-              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
               placeholder="Kort produktbeskrivning"
             />
           </div>
@@ -120,7 +120,7 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
           {/* Category + Brand */}
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
                 Kategori
               </label>
               <select
@@ -128,7 +128,7 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
                 onChange={(e) =>
                   setForm((p) => ({ ...p, category: e.target.value as ProductCategory }))
                 }
-                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
               >
                 {PRODUCT_CATEGORIES.map((cat) => (
                   <option key={cat} value={cat}>
@@ -138,14 +138,14 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
                 Varumärke
               </label>
               <input
                 type="text"
                 value={form.brand}
                 onChange={(e) => setForm((p) => ({ ...p, brand: e.target.value }))}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
                 placeholder="T.ex. Clique"
               />
             </div>
@@ -153,8 +153,8 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
 
           {/* Price */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Grundpris (SEK) <span className="text-red-500">*</span>
+            <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
+              Grundpris (SEK) <span className="text-red-400">*</span>
             </label>
             <input
               type="number"
@@ -163,31 +163,31 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
               onChange={(e) =>
                 setForm((p) => ({ ...p, basePrice: Number(e.target.value) }))
               }
-              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
               placeholder="299"
             />
             {errors.basePrice && (
-              <p className="text-red-500 text-xs mt-1">{errors.basePrice}</p>
+              <p className="text-red-400 text-xs mt-1">{errors.basePrice}</p>
             )}
           </div>
 
           {/* Image URL */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-[#A0A0A0] mb-1">
               Bild-URL
             </label>
             <input
               type="text"
               value={form.imageUrl}
               onChange={(e) => setForm((p) => ({ ...p, imageUrl: e.target.value }))}
-              className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
               placeholder="https://..."
             />
           </div>
 
           {/* Sizes */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-sm font-medium text-[#A0A0A0] mb-2">
               Storlekar
             </label>
             <div className="flex flex-wrap gap-2">
@@ -197,9 +197,9 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
                     type="checkbox"
                     checked={form.sizes.includes(size)}
                     onChange={() => handleSizeToggle(size)}
-                    className="rounded border-gray-300"
+                    className="rounded border-[#1A1A1A] bg-[#0A0A0A] accent-[#4BC8D8]"
                   />
-                  <span className="text-sm text-gray-700">{size}</span>
+                  <span className="text-sm text-[#A0A0A0]">{size}</span>
                 </label>
               ))}
             </div>
@@ -212,8 +212,8 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
               role="switch"
               aria-checked={form.active}
               onClick={() => setForm((p) => ({ ...p, active: !p.active }))}
-              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                form.active ? 'bg-green-500' : 'bg-gray-300'
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#4BC8D8] ${
+                form.active ? 'bg-[#4BC8D8]' : 'bg-[#333]'
               }`}
             >
               <span
@@ -222,23 +222,23 @@ export default function ProductModal({ product, onSave, onClose }: ProductModalP
                 }`}
               />
             </button>
-            <span className="text-sm text-gray-700">
+            <span className="text-sm text-[#A0A0A0]">
               {form.active ? 'Aktiv' : 'Inaktiv'}
             </span>
           </div>
 
           {/* Buttons */}
-          <div className="flex justify-end gap-3 pt-2 border-t">
+          <div className="flex justify-end gap-3 pt-2 border-t border-[#1A1A1A]">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
+              className="px-4 py-2 text-sm font-medium text-[#A0A0A0] bg-transparent border border-[#1A1A1A] rounded-md hover:border-[#4BC8D8] hover:text-white transition-colors"
             >
               Avbryt
             </button>
             <button
               type="submit"
-              className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
+              className="px-4 py-2 text-sm font-medium text-black bg-[#4BC8D8] rounded-md hover:bg-[#3ab5c4] transition-colors"
             >
               Spara
             </button>
