@@ -1,0 +1,35 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Träningströja Classic",
+    "description": "Klassisk träningströja i polyester med klubblogo.",
+    "category": "Överdelar",
+    "brand": "AZ Profil",
+    "basePrice": 299,
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "imageUrl": "/images/products/training-shirt-classic.jpg",
+    "active": true
+  },
+  {
+    "id": "prod-002",
+    "name": "Träningsbyxor Elite",
+    "description": "Lätta och flexibla träningsbyxor med fickor.",
+    "category": "Underdelar",
+    "brand": "AZ Profil",
+    "basePrice": 349,
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "imageUrl": "/images/products/training-pants-elite.jpg",
+    "active": true
+  },
+  {
+    "id": "prod-003",
+    "name": "Softshell-jacka Pro",
+    "description": "Vindtät softshell-jacka med broderad klubblogo.",
+    "category": "Ytterkläder",
+    "brand": "AZ Profil",
+    "basePrice": 699,
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "imageUrl": "/images/products/softshell-jacket-pro.jpg",
+    "active": true
+  }
+]

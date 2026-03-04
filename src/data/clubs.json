@@ -1,0 +1,20 @@
+[
+  {
+    "id": "club-001",
+    "slug": "fc-exempel",
+    "name": "FC Exempel",
+    "primaryColor": "#1a3a5c",
+    "secondaryColor": "#e8c42a",
+    "logo": "/images/clubs/fc-exempel-logo.png",
+    "activeProductIds": ["prod-001", "prod-002", "prod-003"]
+  },
+  {
+    "id": "club-002",
+    "slug": "is-testklubben",
+    "name": "IS Testklubben",
+    "primaryColor": "#2e7d32",
+    "secondaryColor": "#ffffff",
+    "logo": "/images/clubs/is-testklubben-logo.png",
+    "activeProductIds": ["prod-001", "prod-003"]
+  }
+]

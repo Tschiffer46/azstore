@@ -1,0 +1,5 @@
+[
+  { "minQuantity": 10, "discountPercent": 10 },
+  { "minQuantity": 25, "discountPercent": 15 },
+  { "minQuantity": 50, "discountPercent": 20 }
+]
