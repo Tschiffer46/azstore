@@ -80,7 +80,9 @@ export default function ProductsPage() {
               <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Varumärke</th>
               <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Kategori</th>
               <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Pris</th>
-              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Storlekar</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Bilder</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Klubbar</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Tryck</th>
               <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Status</th>
               <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Åtgärder</th>
             </tr>
@@ -88,7 +90,7 @@ export default function ProductsPage() {
           <tbody className="divide-y divide-[#1A1A1A] bg-[#0A0A0A]">
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={7} className="px-4 py-8 text-center text-[#555]">
+                <td colSpan={9} className="px-4 py-8 text-center text-[#555]">
                   Inga produkter hittades.
                 </td>
               </tr>
@@ -104,7 +106,13 @@ export default function ProductsPage() {
                   <td className="px-4 py-3 text-[#A0A0A0]">{product.category}</td>
                   <td className="px-4 py-3 text-[#A0A0A0]">{product.basePrice} kr</td>
                   <td className="px-4 py-3 text-[#A0A0A0]">
-                    {product.sizes.length} storlekar
+                    {product.images.filter((u) => u.trim()).length} st
+                  </td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">
+                    {product.clubIds.length} st
+                  </td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">
+                    {product.prints.length} st
                   </td>
                   <td className="px-4 py-3">
                     <span
