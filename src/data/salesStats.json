@@ -1,0 +1,23 @@
+[
+  {
+    "clubId": "club-001",
+    "clubName": "Uppåkra IF",
+    "totalOrders": 12,
+    "totalRevenue": 28450,
+    "avgOrderValue": 2371
+  },
+  {
+    "clubId": "club-002",
+    "clubName": "Staffanstorps TaeKwonDo klubb",
+    "totalOrders": 8,
+    "totalRevenue": 16320,
+    "avgOrderValue": 2040
+  },
+  {
+    "clubId": "club-003",
+    "clubName": "Torns IF",
+    "totalOrders": 5,
+    "totalRevenue": 9870,
+    "avgOrderValue": 1974
+  }
+]

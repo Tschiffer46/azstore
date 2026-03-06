@@ -1,0 +1,34 @@
+[
+  {
+    "id": "INT-001",
+    "club": "Uppåkra IF",
+    "type": "fråga",
+    "message": "Kan vi beställa extra storlekar på Basic T-shirt?",
+    "date": "2024-03-05",
+    "resolved": false
+  },
+  {
+    "id": "INT-002",
+    "club": "Torns IF",
+    "type": "ändring",
+    "message": "Vill uppdatera leveransadress för beställning ORD-2024-003.",
+    "date": "2024-03-04",
+    "resolved": false
+  },
+  {
+    "id": "INT-003",
+    "club": "Staffanstorps TaeKwonDo klubb",
+    "type": "feedback",
+    "message": "Mycket nöjd med kvaliteten på Softshell Jacka!",
+    "date": "2024-03-03",
+    "resolved": true
+  },
+  {
+    "id": "INT-004",
+    "club": "Uppåkra IF",
+    "type": "fråga",
+    "message": "Hur lång leveranstid gäller för bulk-beställningar?",
+    "date": "2024-03-02",
+    "resolved": true
+  }
+]
