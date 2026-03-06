@@ -7,7 +7,22 @@
     "brand": "Clique",
     "basePrice": 149,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Basic+T-shirt+1",
+      "https://placehold.co/600x600?text=Basic+T-shirt+2",
+      "https://placehold.co/600x600?text=Basic+T-shirt+3"
+    ],
+    "clubIds": ["club-001", "club-002", "club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 10 },
+      { "minQuantity": 25, "discountPercent": 15 },
+      { "minQuantity": 50, "discountPercent": 20 }
+    ],
+    "prints": [
+      { "id": "p1-1", "position": "Framsida övre", "size": "Stor", "text": "Klubbnamn" },
+      { "id": "p1-2", "position": "Ryggsida övre", "size": "Stor", "text": "Spelarnummer" },
+      { "id": "p1-3", "position": "Vänster ärm", "size": "Liten", "text": "Sponsor" }
+    ],
     "active": true
   },
   {
@@ -18,7 +33,19 @@
     "brand": "Clique",
     "basePrice": 299,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Premium+Polo+1",
+      "https://placehold.co/600x600?text=Premium+Polo+2"
+    ],
+    "clubIds": ["club-001"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 8 },
+      { "minQuantity": 25, "discountPercent": 12 }
+    ],
+    "prints": [
+      { "id": "p2-1", "position": "Bröstficka", "size": "Liten", "text": "Klubblogo" },
+      { "id": "p2-2", "position": "Ryggsida övre", "size": "Stor", "text": "Namn och nummer" }
+    ],
     "active": true
   },
   {
@@ -29,7 +56,24 @@
     "brand": "Clique",
     "basePrice": 599,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Softshell+Jacka+1",
+      "https://placehold.co/600x600?text=Softshell+Jacka+2",
+      "https://placehold.co/600x600?text=Softshell+Jacka+3",
+      "https://placehold.co/600x600?text=Softshell+Jacka+4"
+    ],
+    "clubIds": ["club-001", "club-002", "club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 5, "discountPercent": 5 },
+      { "minQuantity": 15, "discountPercent": 10 },
+      { "minQuantity": 30, "discountPercent": 18 }
+    ],
+    "prints": [
+      { "id": "p3-1", "position": "Framsida övre", "size": "Stor", "text": "Klubbnamn" },
+      { "id": "p3-2", "position": "Ryggsida nedre", "size": "Stor", "text": "Sponsor" },
+      { "id": "p3-3", "position": "Höger ärm", "size": "Liten", "text": "Säsong" },
+      { "id": "p3-4", "position": "Vänster ärm", "size": "Liten", "text": "Liga" }
+    ],
     "active": true
   },
   {
@@ -40,7 +84,19 @@
     "brand": "Clique",
     "basePrice": 349,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Basic+Hoodie+1",
+      "https://placehold.co/600x600?text=Basic+Hoodie+2"
+    ],
+    "clubIds": ["club-001"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 10 },
+      { "minQuantity": 25, "discountPercent": 15 }
+    ],
+    "prints": [
+      { "id": "p4-1", "position": "Framsida övre", "size": "Stor", "text": "Klubblogo" },
+      { "id": "p4-2", "position": "Ryggsida övre", "size": "Stor", "text": "Klubbnamn" }
+    ],
     "active": true
   },
   {
@@ -51,7 +107,23 @@
     "brand": "Craft",
     "basePrice": 199,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Craft+Prime+1",
+      "https://placehold.co/600x600?text=Craft+Prime+2",
+      "https://placehold.co/600x600?text=Craft+Prime+3",
+      "https://placehold.co/600x600?text=Craft+Prime+4",
+      "https://placehold.co/600x600?text=Craft+Prime+5"
+    ],
+    "clubIds": ["club-002"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 10 },
+      { "minQuantity": 20, "discountPercent": 15 },
+      { "minQuantity": 40, "discountPercent": 20 }
+    ],
+    "prints": [
+      { "id": "p5-1", "position": "Bröstficka", "size": "Liten", "text": "Craft logo" },
+      { "id": "p5-2", "position": "Ryggsida övre", "size": "Stor", "text": "Träningsgrupp" }
+    ],
     "active": true
   },
   {
@@ -62,7 +134,20 @@
     "brand": "Craft",
     "basePrice": 449,
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Craft+Leisure+1",
+      "https://placehold.co/600x600?text=Craft+Leisure+2",
+      "https://placehold.co/600x600?text=Craft+Leisure+3"
+    ],
+    "clubIds": ["club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 8 },
+      { "minQuantity": 25, "discountPercent": 14 }
+    ],
+    "prints": [
+      { "id": "p6-1", "position": "Framsida övre", "size": "Liten", "text": "Craft logotyp" },
+      { "id": "p6-2", "position": "Ryggsida nedre", "size": "Stor", "text": "Klubbfärger" }
+    ],
     "active": true
   },
   {
@@ -73,7 +158,20 @@
     "brand": "Harvest",
     "basePrice": 279,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Harvest+Polo+1",
+      "https://placehold.co/600x600?text=Harvest+Polo+2"
+    ],
+    "clubIds": ["club-001", "club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 10 },
+      { "minQuantity": 30, "discountPercent": 18 }
+    ],
+    "prints": [
+      { "id": "p7-1", "position": "Bröstficka", "size": "Liten", "text": "Eco-label" },
+      { "id": "p7-2", "position": "Ryggsida övre", "size": "Stor", "text": "Klubbnamn" },
+      { "id": "p7-3", "position": "Vänster ärm", "size": "Liten", "text": "Säsong 2025" }
+    ],
     "active": true
   },
   {
@@ -84,7 +182,19 @@
     "brand": "Clique",
     "basePrice": 399,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Stretch+Byxor+1",
+      "https://placehold.co/600x600?text=Stretch+Byxor+2",
+      "https://placehold.co/600x600?text=Stretch+Byxor+3"
+    ],
+    "clubIds": ["club-002"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 8 },
+      { "minQuantity": 20, "discountPercent": 13 }
+    ],
+    "prints": [
+      { "id": "p8-1", "position": "Höger ärm", "size": "Liten", "text": "Klubblogo" }
+    ],
     "active": true
   },
   {
@@ -95,7 +205,19 @@
     "brand": "Clique",
     "basePrice": 149,
     "sizes": ["One Size"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Mössa+1",
+      "https://placehold.co/600x600?text=Mössa+2"
+    ],
+    "clubIds": ["club-001", "club-002", "club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 10, "discountPercent": 10 },
+      { "minQuantity": 25, "discountPercent": 15 },
+      { "minQuantity": 50, "discountPercent": 20 }
+    ],
+    "prints": [
+      { "id": "p9-1", "position": "Framsida övre", "size": "Stor", "text": "Klubblogo brodyr" }
+    ],
     "active": true
   },
   {
@@ -106,7 +228,23 @@
     "brand": "Harvest",
     "basePrice": 499,
     "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-    "imageUrl": "",
+    "images": [
+      "https://placehold.co/600x600?text=Softshell+Vest+1",
+      "https://placehold.co/600x600?text=Softshell+Vest+2",
+      "https://placehold.co/600x600?text=Softshell+Vest+3",
+      "https://placehold.co/600x600?text=Softshell+Vest+4"
+    ],
+    "clubIds": ["club-001", "club-003"],
+    "volumeDiscounts": [
+      { "minQuantity": 5, "discountPercent": 5 },
+      { "minQuantity": 15, "discountPercent": 12 },
+      { "minQuantity": 30, "discountPercent": 17 }
+    ],
+    "prints": [
+      { "id": "p10-1", "position": "Bröstficka", "size": "Liten", "text": "Harvest logo" },
+      { "id": "p10-2", "position": "Ryggsida övre", "size": "Stor", "text": "Klubbnamn" },
+      { "id": "p10-3", "position": "Vänster ärm", "size": "Liten", "text": "Säsong" }
+    ],
     "active": true
   }
 ]
