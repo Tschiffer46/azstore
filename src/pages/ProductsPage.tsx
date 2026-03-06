@@ -39,10 +39,10 @@ export default function ProductsPage() {
     <div>
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">Produktkatalog</h1>
+        <h1 className="text-2xl font-bold text-white">Produktkatalog</h1>
         <button
           onClick={() => setModalProduct(null)}
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
+          className="px-4 py-2 text-sm font-medium text-black bg-[#4BC8D8] rounded-md hover:bg-[#3ab5c4] transition-colors"
         >
           + Lägg till produkt
         </button>
@@ -55,12 +55,12 @@ export default function ProductsPage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Sök på namn eller varumärke..."
-          className="flex-1 border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white placeholder-[#555] focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
         />
         <select
           value={categoryFilter}
           onChange={(e) => setCategoryFilter(e.target.value)}
-          className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="bg-[#0A0A0A] border border-[#1A1A1A] rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#4BC8D8]"
         >
           <option value="">Alla kategorier</option>
           {PRODUCT_CATEGORIES.map((cat) => (
@@ -72,23 +72,23 @@ export default function ProductsPage() {
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
-        <table className="min-w-full divide-y divide-gray-200 text-sm">
-          <thead className="bg-gray-50">
+      <div className="overflow-x-auto rounded-lg border border-[#1A1A1A]">
+        <table className="min-w-full divide-y divide-[#1A1A1A] text-sm">
+          <thead className="bg-[#111111]">
             <tr>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Namn</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Varumärke</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Kategori</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Pris</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Storlekar</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Status</th>
-              <th className="px-4 py-3 text-left font-medium text-gray-500">Åtgärder</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Namn</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Varumärke</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Kategori</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Pris</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Storlekar</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Status</th>
+              <th className="px-4 py-3 text-left font-medium text-[#A0A0A0]">Åtgärder</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-100 bg-white">
+          <tbody className="divide-y divide-[#1A1A1A] bg-[#0A0A0A]">
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={7} className="px-4 py-8 text-center text-gray-400">
+                <td colSpan={7} className="px-4 py-8 text-center text-[#555]">
                   Inga produkter hittades.
                 </td>
               </tr>
@@ -96,22 +96,22 @@ export default function ProductsPage() {
               filtered.map((product) => (
                 <tr
                   key={product.id}
-                  className="hover:bg-gray-50 cursor-pointer"
+                  className="hover:bg-[#111111] cursor-pointer transition-colors"
                   onClick={() => setModalProduct(product)}
                 >
-                  <td className="px-4 py-3 font-medium text-gray-900">{product.name}</td>
-                  <td className="px-4 py-3 text-gray-600">{product.brand}</td>
-                  <td className="px-4 py-3 text-gray-600">{product.category}</td>
-                  <td className="px-4 py-3 text-gray-600">{product.basePrice} kr</td>
-                  <td className="px-4 py-3 text-gray-600">
+                  <td className="px-4 py-3 font-medium text-white">{product.name}</td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">{product.brand}</td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">{product.category}</td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">{product.basePrice} kr</td>
+                  <td className="px-4 py-3 text-[#A0A0A0]">
                     {product.sizes.length} storlekar
                   </td>
                   <td className="px-4 py-3">
                     <span
                       className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
                         product.active
-                          ? 'bg-green-100 text-green-700'
-                          : 'bg-red-100 text-red-700'
+                          ? 'bg-green-900/40 text-green-400'
+                          : 'bg-red-900/40 text-red-400'
                       }`}
                     >
                       {product.active ? 'Aktiv' : 'Inaktiv'}
@@ -123,7 +123,7 @@ export default function ProductsPage() {
                   >
                     <button
                       onClick={() => handleDelete(product.id)}
-                      className="text-red-500 hover:text-red-700 text-xs font-medium"
+                      className="text-red-400 hover:text-red-300 text-xs font-medium transition-colors"
                     >
                       Ta bort
                     </button>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
         </table>
       </div>
 
-      <p className="text-xs text-gray-400 mt-2">{filtered.length} produkter visas</p>
+      <p className="text-xs text-[#555] mt-2">{filtered.length} produkter visas</p>
 
       {/* Modal */}
       {modalProduct !== undefined && (

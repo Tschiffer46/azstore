@@ -20,16 +20,19 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="bg-white shadow rounded-lg p-8 w-full max-w-sm">
-        <h1 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-          Logga in
-        </h1>
+    <div className="min-h-screen flex items-center justify-center bg-black">
+      <div className="bg-[#111111] border border-[#1A1A1A] rounded-lg p-8 w-full max-w-sm shadow-xl">
+        <div className="text-center mb-6">
+          <h1 className="text-2xl font-bold text-white">
+            <span className="text-[#4BC8D8]">AZ</span> STORE
+          </h1>
+          <p className="text-[#A0A0A0] text-sm mt-1">Logga in</p>
+        </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
               htmlFor="username"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-[#A0A0A0] mb-1"
             >
               Användarnamn
             </label>
@@ -40,13 +43,13 @@ export default function LoginPage() {
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#4BC8D8] placeholder-[#555]"
             />
           </div>
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-[#A0A0A0] mb-1"
             >
               Lösenord
             </label>
@@ -57,13 +60,13 @@ export default function LoginPage() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-[#4BC8D8] placeholder-[#555]"
             />
           </div>
-          {error && <p className="text-sm text-red-600">{error}</p>}
+          {error && <p className="text-sm text-red-400">{error}</p>}
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded font-medium hover:bg-blue-700 transition-colors"
+            className="w-full bg-[#4BC8D8] text-black py-2 rounded font-medium hover:bg-[#3ab5c4] transition-colors"
           >
             Logga in
           </button>
